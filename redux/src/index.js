@@ -6,25 +6,25 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-import { createStore } from 'redux'
+import { createStore } from 'redux';
 
-function todos(state = [], action) {
+function value(state = [], action) {
   switch (action.type) {
-    case 'ADD_TODO':
-      return state.concat([action.text])
+    case 'ADD_VALUE':
+      return state.concat([action.payment]);
     default:
-      return state
+      return state;
   }
 }
 
-const store = createStore(todos, ['Use Redux'])
+const store = createStore(value);
 
 store.dispatch({
-  type: 'ADD_TODO',
-  text: 'Read the docs'
+  type: 'ADD_VALUE',
+  payment: 'I got value from store'
 })
 
-console.log(store.getState())
+console.log(store.getState());
 
 ReactDOM.render(
   <Provider store={store}>
