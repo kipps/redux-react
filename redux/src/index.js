@@ -6,23 +6,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-import { createStore } from 'redux';
+import store from './redux/store/storeConfiguration';
 
-function value(state = [], action) {
-  switch (action.type) {
-    case 'ADD_VALUE':
-      return state.concat([action.payment]);
-    default:
-      return state;
-  }
-}
+console.log(store.getState());
 
-const store = createStore(value);
-
-store.dispatch({
-  type: 'ADD_VALUE',
-  payment: 'I got value from store'
-})
 
 console.log(store.getState());
 
