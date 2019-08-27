@@ -6,9 +6,9 @@ class AddBook extends React.Component {
         return (
             <form>
                 <input placeholder='Name' type='text' />
-                <input placeholder='Age' type='number' />
+                <input placeholder='Count of pages' type='number' />
    
-                <button>Add user</button>
+                <button>Add book</button>
             </form>
         );
     }
