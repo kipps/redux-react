@@ -1,0 +1,28 @@
+.App {
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    section {
+        
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 16px;
+
+        form:first-child {
+            margin-bottom: 8px;
+        }
+    }
+
+    form {
+        margin: 0 -8px;
+
+        & > * {
+            margin: 0 4px;
+            padding: 4px 8px;
+            border-radius: 2px;
+            border: 1px solid #888;
+        }
+    }
+}

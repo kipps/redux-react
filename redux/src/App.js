@@ -1,6 +1,11 @@
 import React from 'react';
 import {connect} from "react-redux";
 
+import AddUser from './components/AddUser/AddUser';
+import AddBook from './components/AddBook/AddBook';
+
+import './App.scss';
+
 class App extends React.Component {
    render() {
 
@@ -8,7 +13,11 @@ class App extends React.Component {
      const {books} = this.props.bookStore;
 
      return (
-       <div className="App">
+       <div className="App" style={{padding: 40}}>
+          <section style={{clear: 'both'}}>
+            <AddUser style={{marginBottom: 32}} />
+            <AddBook />
+          </section>
           <div style={{float:'left', padding: 20}}>
             <header>
               <h3>Users:</h3>
@@ -36,8 +45,7 @@ class App extends React.Component {
               })
             }
             </ul>
-          </div> 
-
+          </div>
        </div>
      );
    }
