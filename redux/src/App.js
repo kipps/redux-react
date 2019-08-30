@@ -7,13 +7,13 @@ import AddBook from './components/AddBook/AddBook';
 import './App.scss';
 
 class App extends React.Component {
-   render() {
 
+   render() {
      const {users} = this.props.userStore;
      const {books} = this.props.bookStore;
 
      return (
-       <div className="App" style={{padding: 40}}>
+       <div className='App' style={{padding: 40}}>
           <section style={{clear: 'both'}}>
             <AddUser style={{marginBottom: 32}} />
             <AddBook />
@@ -40,7 +40,7 @@ class App extends React.Component {
             {
               books.map(item => {
                 return (
-                  <li key={item.id}>{item.name}</li>
+                  <li key={item.id}>{item.title}</li>
                 )
               })
             }

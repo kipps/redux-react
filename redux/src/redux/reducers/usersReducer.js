@@ -1,11 +1,5 @@
 const initialState = {
-    users: [
-      {
-        id: 1,
-        name: 'John',
-        age: 34
-      }
-    ],
+    users: [],
     loading: false
 }
 
@@ -16,13 +10,13 @@ export default function usersReducer(state = initialState, action) {
                   users: [
                   ...state.users,
                     {
-                      id: action.number,
-                      name: action.name,
-                      age: action.age
+                      id: action.payload.id,
+                      name: action.payload.name,
+                      age: action.payload.age
                     }
                   ]
-              })
+              });       
         default:
-            return state
+            return state;
     }
 }

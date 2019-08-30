@@ -8,11 +8,6 @@ import * as serviceWorker from './serviceWorker';
 
 import store from './redux/store/storeConfiguration';
 
-console.log(store.getState());
-
-
-console.log(store.getState());
-
 ReactDOM.render(
   <Provider store={store}>
     <App />

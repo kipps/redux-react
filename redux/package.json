@@ -34,7 +34,9 @@
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.12.0",
+    "react-redux-form": "^1.16.14",
     "redux-devtools": "^3.5.0",
+    "redux-form": "^8.2.6",
     "sass-loader": "^7.3.1"
   }
 }
