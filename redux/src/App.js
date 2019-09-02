@@ -13,9 +13,9 @@ class App extends React.Component {
    }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = store => {
   return {
-    valueState: state
+    valueState: store
 
   }
 }

@@ -8,12 +8,12 @@ import * as serviceWorker from './serviceWorker';
 
 import { createStore } from 'redux';
 
-function value(state = [], action) {
+function value(store = [], action) {
   switch (action.type) {
     case 'ADD_VALUE':
-      return state.concat([action.payment]);
+      return store.concat([action.payment]);
     default:
-      return state;
+      return store;
   }
 }
 
