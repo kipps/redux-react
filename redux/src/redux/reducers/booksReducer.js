@@ -2,7 +2,7 @@ const initialState = {
     books: [
       {
         id: 0,
-        name: 'The book thrief',
+        name: 'The Book Thief',
         pages: 350
       },
       {
