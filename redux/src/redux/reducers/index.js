@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import moviesReducer from './acyncReduxer';
+import moviesReducer from './acyncReducer';
 
 export const rootReducer = combineReducers({
     movies: moviesReducer
