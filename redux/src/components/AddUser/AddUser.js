@@ -11,7 +11,7 @@ const addUserFunction = values => {
    store.dispatch(addUserAction(values));
 }
 
-const renderInput = ({input, meta, type, name, value, placeholder, className}) =>
+const renderInput = ({input, type, name, value, placeholder, className}) =>
   <input type={type} name={name} className={className} placeholder={placeholder}  value={value} {...input}/>
 
 let AddUser = ({ handleSubmit }) => {

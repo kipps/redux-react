@@ -11,7 +11,7 @@ const addBookFunction = values => {
    store.dispatch(addBookAction(values));
 }
 
-const renderInput = ({input, meta, type, name, value, className, placeholder}) =>
+const renderInput = ({input, type, name, value, className, placeholder}) =>
   <input type={type} name={name} className={className} placeholder={placeholder} value={value} {...input}/>
 
 let AddBook = ({ handleSubmit }) => {
