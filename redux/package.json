@@ -37,7 +37,7 @@
     "react-redux-form": "^1.16.14",
     "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8",
-    "redux-form": "^8.2.6",
+    "redux-form": "^8.3.7",
     "redux-loop": "^5.0.1",
     "redux-thunk": "^2.3.0",
     "sass-loader": "^7.3.1"
