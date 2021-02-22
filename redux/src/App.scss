@@ -16,13 +16,50 @@
     }
 
     form {
-        margin: 0 -8px;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgba(0, 0, 0, .3);
 
-        & > * {
-            margin: 0 4px;
-            padding: 4px 8px;
-            border-radius: 2px;
-            border: 1px solid #888;
+        > div {
+            margin-bottom: 16px;
+            display: flex;
+            label {
+                width: 15%;
+            }
+            input:not([type=radio]), select, textarea {
+                padding: 12px 24px;
+            }
+
+            > div.formField {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    display: inline-block;
+                    margin-top: 8px;
+                    color: red;
+                    font: {
+                        size: 13px;
+                        weight: 600;
+                    }
+                }
+            }
+        }
+
+        button {
+            margin-right: 16px;
+            border-radius: 3px;
+            font-weight: bold;
+            padding: 8px 12px;
+            border: 1px solid rgba(0, 0, 0, .9);
+            background: white;
+            color: black;
+
+            &:first-of-type {
+                border: 0;
+                background: darkslateblue;
+                color: white;
+            }
         }
     }
 }

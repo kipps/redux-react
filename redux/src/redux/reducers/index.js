@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import moviesReducer from './acyncReducer';
+import accountReducer from './account';
+import { reducer as formReducer } from 'redux-form'
 
 export const rootReducer = combineReducers({
-    movies: moviesReducer
+    accountReducer: accountReducer,
+    form: formReducer
 });
