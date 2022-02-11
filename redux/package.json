@@ -33,7 +33,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react-redux-form": "^1.16.14",
     "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8",
